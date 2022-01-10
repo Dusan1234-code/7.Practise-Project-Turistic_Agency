@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="slike/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TEST</title>
+  </head>
+  <body>
+    <!--************** HEADER ************ -->
+    <header>
+      <nav>
+        <div class="logo">
+          <p><img src="slike/favicon.svg" alt="logo" />GoGoTravel</p>
+        </div>
+
+        <ul>
+          <li><a href="#">Pocetna</a></li>
+          <li><a href="#">Smestaj</a></li>
+          <li><a href="#">Letovi</a></li>
+          <li><a href="#">Iznajmljivanje auta</a></li>
+        </ul>
+
+        <div class="log">
+          <a href="#">Log in</a>
+          <a href="#">Sign in</a>
+        </div>
+      </nav>
+    </header>
+
+    <!--************** MAIN ************ -->
+    <main>
+      <!--************** SECTION HERO ************ -->
+      <section class="section-hero">
+        <div class="container">
+          <form action="#" name="forma">
+            <div class="flex">
+              <div class="flex-item">
+                <label for="lokacija">Lokacija</label>
+                <input type="text" name="lokacija" placeholder="Gde idete?" />
+              </div>
+              <div class="flex-item">
+                <label for="dolazak">Datum dolaska</label>
+                <input type="date" name="date" />
+              </div>
+              <div class="flex-item">
+                <label for="odlazak">Datum odlaska</label>
+                <input type="date" name="odlazak" />
+              </div>
+              <div class="flex-item">
+                <label for="broj">Broj osoba</label>
+                <input type="number" name="broj" />
+              </div>
+              <div class="flex-item">
+                <a href="#"><i class="fas fa-search"></i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--************** SECTION CARDS ************ -->
+      <section class="section-cards">
+        <h1 class="naslovSekcije">Inspiracija za vase sledece putovanje</h1>
+        <div class="container">
+          <div class="grid">
+            <div class="grid-item">
+              <img src="slike/Dubai.jpeg" alt="Dubai picture" />
+              <p>Dubai</p>
+            </div>
+
+            <div class="grid-item">
+              <img src="slike/London.jpeg" alt="London picture" />
+              <p>London</p>
+            </div>
+
+            <div class="grid-item">
+              <img src="slike/Berlin.jpeg" alt="Berlin picture" />
+              <p>Berlin</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--************** FOOTER  ************ -->
+    <footer>
+      <div class="container">
+        <div class="grid">
+          <div class="grid-item">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.0247878781415!2d-73.96763018419949!3d40.805449079321775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f63c75af2d65%3A0xf45542f6cb090cc9!2zMjg4MCBCcm9hZHdheSwgTmV3IFlvcmssIE5ZIDEwMDI1LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1641836692461!5m2!1ssr!2srs"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <div class="grid-item">
+            <h2>Podrska</h2>
+            <ul>
+              <li><a href="#">Centar za pomoc</a></li>
+              <li><a href="#">Informacije o bezbednosti</a></li>
+              <li><a href="#">Opcije otkazivanja</a></li>
+              <li><a href="#">Nas odgovor na COVID-19</a></li>
+              <li><a href="#">Podrzite osobe s invaliditetom</a></li>
+              <li><a href="#">Prijavite problem u okolini</a></li>
+            </ul>
+          </div>
+
+          <div class="grid-item">
+            <h2>Osnovni podaci:</h2>
+            <ul>
+              <li><a href="#">Pres centar</a></li>
+              <li><a href="#">Vise o novim funkcijama</a></li>
+              <li><a href="#">Pismo od nasih osnivaca</a></li>
+              <li><a href="#">Zaposlenje</a></li>
+              <li><a href="#">Investitori</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

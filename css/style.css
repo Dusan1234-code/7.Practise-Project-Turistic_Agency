@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Luxurious Roman", cursive;
+  color: black;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #0e1538;
+  padding: 1rem;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+header nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  color: white;
+}
+header nav .logo p {
+  font-size: 3.5rem;
+}
+header nav .logo p img {
+  width: 5rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  justify-self: center;
+  align-self: flex-end;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header nav .log {
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  width: max-content;
+  padding: 0.4rem;
+  justify-self: flex-end;
+  text-align: center;
+}
+header nav .log a {
+  display: inline-block;
+  padding: 0.4rem;
+  color: #0e1538;
+  text-decoration: none;
+}
+header nav .log a:first-child {
+  border-right: 1px solid #0e1538;
+  padding: 0.8rem;
+}
+
+main .section-hero {
+  background-image: url("../slike/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  position: relative;
+}
+main .section-hero form {
+  background-color: white;
+  color: #0e1538;
+  border-radius: 20px;
+  padding: 1rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .section-hero form .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+main .section-hero form .flex .flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .section-hero form .flex .flex-item:first-child input {
+  width: 15rem;
+}
+main .section-hero form .flex .flex-item:nth-child(4) input {
+  width: 15rem;
+}
+main .section-hero form .flex .flex-item input,
+main .section-hero form .flex .flex-item a {
+  padding: 0.4rem;
+  height: 5rem;
+}
+main .section-hero form .flex .flex-item input {
+  border-radius: 20px;
+  border: 1px solid #0e1538;
+}
+main .section-hero form .flex .flex-item a {
+  align-self: center;
+  text-align: center;
+  display: inline-block;
+  padding: 1.6rem;
+  border-radius: 50%;
+  background-color: #fb5b5b;
+  color: white;
+  margin-top: 0.9rem;
+}
+main .section-cards {
+  padding: 1.5rem;
+}
+main .section-cards .naslovSekcije {
+  text-align: center;
+  color: #7079f7;
+  margin-bottom: 4rem;
+}
+main .section-cards .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 2rem;
+}
+main .section-cards .grid .grid-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #0e1538;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px #0e1538;
+}
+main .section-cards .grid .grid-item img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 20px;
+}
+main .section-cards .grid .grid-item p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #0e1538;
+  color: white;
+  padding: 3rem;
+}
+footer .grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+footer .grid iframe {
+  width: 30rem;
+  height: 30rem;
+  margin-right: 5rem;
+}
+footer .grid .grid-item ul {
+  list-style: none;
+}
+footer .grid .grid-item ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

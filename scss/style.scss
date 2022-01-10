@@ -1,0 +1,188 @@
+@import "general";
+@import "vars";
+@import "mixin";
+
+// *****************
+// ***** HEADER *******
+// *****************
+header {
+  background-color: $tamnoPlava;
+  padding: 1rem;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    color: white;
+    .logo {
+      p {
+        font-size: 3.5rem;
+        img {
+          width: 5rem;
+        }
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      justify-self: center;
+      align-self: flex-end;
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    .log {
+      background-color: white;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      width: max-content;
+      padding: 0.4rem;
+      justify-self: flex-end;
+      text-align: center;
+      a {
+        display: inline-block;
+        padding: 0.4rem;
+        color: $tamnoPlava;
+        text-decoration: none;
+        &:first-child {
+          border-right: 1px solid $tamnoPlava;
+          padding: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+// *****************
+// ***** MAIN *******
+// *****************
+main {
+  // *****************
+  // ***** SECTION HERO *******
+  // *****************
+  .section-hero {
+    background-image: url("../slike/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    position: relative;
+    form {
+      background-color: white;
+      color: $tamnoPlava;
+      border-radius: 20px;
+      padding: 1rem;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .flex {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        .flex-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &:first-child input {
+            width: 15rem;
+          }
+          &:nth-child(4) input {
+            width: 15rem;
+          }
+          input,
+          a {
+            padding: 0.4rem;
+            height: 5rem;
+          }
+          input {
+            border-radius: 20px;
+            border: 1px solid $tamnoPlava;
+          }
+          a {
+            align-self: center;
+            text-align: center;
+            display: inline-block;
+            padding: 1.6rem;
+            border-radius: 50%;
+            background-color: $crvena;
+            color: white;
+            margin-top: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  // *****************
+  // ***** SECTION CARDS *******
+  // *****************
+  .section-cards {
+    padding: 1.5rem;
+    .naslovSekcije {
+      text-align: center;
+      color: $plava;
+      margin-bottom: 4rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      column-gap: 2rem;
+      .grid-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: $tamnoPlava;
+        padding: 2rem 3rem;
+        border-radius: 20px;
+        box-shadow: 2px 2px 4px $tamnoPlava;
+        img {
+          width: 30rem;
+          height: 30rem;
+          border-radius: 20px;
+        }
+        p {
+          font-size: 2rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// *****************
+// ***** FOOTER *******
+// *****************
+footer {
+  background-color: $tamnoPlava;
+  color: white;
+  padding: 3rem;
+  .grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    iframe {
+      width: 30rem;
+      height: 30rem;
+      margin-right: 5rem;
+    }
+    .grid-item {
+      ul {
+        list-style: none;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
