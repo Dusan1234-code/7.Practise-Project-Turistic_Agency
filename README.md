@@ -1,2 +1,2 @@
 # 7.Practise-Project-Turistic_Agency
-Responsive website created for local travel agency on Serbian language.
+Code project is on Developer branch. Responsive website created for local travel agency on Serbian language.
